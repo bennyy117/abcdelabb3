@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>labbuoi3</title>
+    <style>
+        /* b1 */
+        body {
+            text-align: center;
+            background-color: rosybrown;
+            background-image: url(https://i.pinimg.com/564x/cb/c7/52/cbc752833afa950a324d99aad9e6bb15.jpg);
+            background-size: 50%;
+            font-family: Pacifico;
+        }
+        form {
+            box-sizing: border-box;
+            width: 250px;
+            margin: 100px auto 0;
+            padding-bottom: 40px;
+            border-radius: 3px;
+        }
+        input {
+            margin: 0px 10px;
+            width: 200px;
+            border: none;
+            padding: 10px 10px;
+            border-bottom: solid 1px rgb(151, 93, 144);
+            background: linear-gradient (
+                to bottom,
+                pink 96%,
+                rgb(151, 93, 144) 4%
+            );
+            background-position: -200px 0;
+            background-size: 200px 100%;
+            background-repeat: no-repeat;
+            color: rgb(126, 49, 62);
+            text-align: center;
+            font-family: Pacifico;
+        }
+        input:focus-visible {
+            outline: none;
+        }
+        button {
+            margin: 15px;
+            border:rgb(172, 124, 166);
+            background: black;
+            cursor: pointer;
+            border-radius: 3px;
+            padding: 6px;
+            width: 220px;
+            color: white;
+            font-family: Pacifico;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đăng kí</h1>
+    <form>
+        <label for="ten">Họ và tên: </label>
+        <input type="text" id="ten" name="ten" required=" "><span>*</span><br><br>
+
+        <label for="tuoi">Tuổi: </label>
+        <input type="number" id="tuoi" name="tuoi" required=" "><span>*</span><br><br>
+
+        <label for="sdt">Số điện thoại: </label>
+        <input type="number" id="sdt" name="sdt" required=" "><span>*</span><br><br>
+
+        <label for="gioitinh">Giới tính: </label>
+        <select name="gioitinh">
+            <option value="nam">Nam</option>
+            <option value="nu">Nữ</option>
+        </select>
+
+        <button id="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function (){
+            document.getElementById('submit').style.color = 'black';
+            document.getElementById('submit').style.background = 'rgb(207, 163, 170)';
+        });
+    </script>
+
+    <!-- b2 -->
+    <img src="https://i.pinimg.com/564x/3b/bb/a2/3bbba29cd6f447e77f2fb4d0440a8862.jpg" width="33%"/>
+    <img src="https://i.pinimg.com/564x/3b/bb/a2/3bbba29cd6f447e77f2fb4d0440a8862.jpg" width="33%"/>
+    <img src="https://i.pinimg.com/564x/3b/bb/a2/3bbba29cd6f447e77f2fb4d0440a8862.jpg" width="33%"/>
+    <img src="https://i.pinimg.com/564x/3b/bb/a2/3bbba29cd6f447e77f2fb4d0440a8862.jpg" width="33%"/>
+    <img src="https://i.pinimg.com/564x/3b/bb/a2/3bbba29cd6f447e77f2fb4d0440a8862.jpg" width="33%"/>
+    <img src="https://i.pinimg.com/564x/3b/bb/a2/3bbba29cd6f447e77f2fb4d0440a8862.jpg" width="33%"/>
+</body>
+</html>
